@@ -90,7 +90,7 @@ form.addEventListener('submit',async function(e){
  const contact=form.elements.kontakt.value;
  const phone=form.elements.telefon.value.trim();
  const email=form.elements.email.value.trim();
- if(contact==='Telefon'&&!phone){status.textContent='Bitte gib für einen Rückruf deine Phonenummer an.';return}
+ if(contact==='Phone'&&!phone){status.textContent='Bitte gib für einen Rückruf deine Phonenummer an.';return}
  if(!form.reportValidity())return;
  const data=new FormData(form);
  data.set('_subject','Home & Deco – Wünsche & Anregungen');
